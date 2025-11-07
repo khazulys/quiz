@@ -73,7 +73,7 @@ fun QuizScreen(
                 .verticalScroll(rememberScrollState())
         ) {
             LinearProgressIndicator(
-                progress = { progress },
+                progress = progress,
                 modifier = Modifier.fillMaxWidth(),
                 color = MaterialTheme.colorScheme.primary
             )
@@ -200,6 +200,7 @@ fun TimerChip(
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun AnswerOption(
     option: String,

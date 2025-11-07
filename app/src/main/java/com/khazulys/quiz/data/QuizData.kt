@@ -2,44 +2,6 @@ package com.khazulys.quiz.data
 
 object QuizData {
     
-    val categories = listOf(
-        QuizCategory(
-            id = "matematika",
-            name = "Matematika",
-            description = "Uji kemampuan matematika Anda",
-            icon = "📐",
-            questions = matematikaQuestions
-        ),
-        QuizCategory(
-            id = "bahasa_indonesia",
-            name = "Bahasa Indonesia",
-            description = "Uji kemampuan bahasa Indonesia Anda",
-            icon = "📚",
-            questions = bahasaIndonesiaQuestions
-        ),
-        QuizCategory(
-            id = "bahasa_inggris",
-            name = "Bahasa Inggris",
-            description = "Test your English skills",
-            icon = "🇬🇧",
-            questions = bahasaInggrisQuestions
-        ),
-        QuizCategory(
-            id = "ipa",
-            name = "IPA (Sains)",
-            description = "Uji pengetahuan sains Anda",
-            icon = "🔬",
-            questions = ipaQuestions
-        ),
-        QuizCategory(
-            id = "ips",
-            name = "IPS (Sosial)",
-            description = "Uji pengetahuan sosial Anda",
-            icon = "🌍",
-            questions = ipsQuestions
-        )
-    )
-
     private val matematikaQuestions = listOf(
         Question(
             id = 1,
@@ -324,6 +286,44 @@ object QuizData {
             options = listOf("Ki Hajar Dewantara", "Mohammad Hatta", "Soekarno", "Sudirman"),
             correctAnswerIndex = 1,
             timeLimit = 25
+        )
+    )
+    
+    val categories = listOf(
+        QuizCategory(
+            id = "matematika",
+            name = "Matematika",
+            description = "Uji kemampuan matematika Anda",
+            icon = "📐",
+            questions = matematikaQuestions
+        ),
+        QuizCategory(
+            id = "bahasa_indonesia",
+            name = "Bahasa Indonesia",
+            description = "Uji kemampuan bahasa Indonesia Anda",
+            icon = "📚",
+            questions = bahasaIndonesiaQuestions
+        ),
+        QuizCategory(
+            id = "bahasa_inggris",
+            name = "Bahasa Inggris",
+            description = "Test your English skills",
+            icon = "🇬🇧",
+            questions = bahasaInggrisQuestions
+        ),
+        QuizCategory(
+            id = "ipa",
+            name = "IPA (Sains)",
+            description = "Uji pengetahuan sains Anda",
+            icon = "🔬",
+            questions = ipaQuestions
+        ),
+        QuizCategory(
+            id = "ips",
+            name = "IPS (Sosial)",
+            description = "Uji pengetahuan sosial Anda",
+            icon = "🌍",
+            questions = ipsQuestions
         )
     )
 }
